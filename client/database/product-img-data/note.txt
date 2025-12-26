@@ -1,0 +1,29 @@
+ip14 18790k
+ip14p 21290k
+ip14pr 23990k
+ip14prm 26190k
+<+3000k/storage>
+
+ipad-air 13690k wf64gb
+ipad-air 17190k 5g64gb
+ipad-air 18690k wf256gb
+ipad-air 20990k 5g256gb
+
+ipad-pro 28790k wf128gb
+ipad-pro 31990k wf256gb
+ipad-pro 35490k wf512gb
+ipad-pro 51990k wf1tb
+ipad-pro 63990k wf2tb
+
+macbook-pro 29790k 8-256gb
+macbook-pro 33690k 8-512gb
+macbook-pro 35990k 16-256gb
+macbook-pro 39890k 16-512gb
+
+macbook-air 26890k 8-256gb
+macbook-air 31990k 16-256gb
+macbook-air 32990k 8-512gb
+macbook-air 37990k 24-256gb
+macbook-air 39490k 16-512gb
+
+watch-ultra 18190k eSim

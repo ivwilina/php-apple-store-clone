@@ -1,0 +1,355 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.navigation-bar {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    user-select: none;
+}
+
+.footer-bar {
+    bottom: 0;
+    width: 100%;
+    z-index: 9999;
+    user-select: none;
+}
+
+.container-fluid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* banner0 */
+
+#section-banner0 {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.banner0 {
+    padding-top: 180px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgba(169, 164, 155, 1);
+}
+
+.banner0 #product-ads {
+    font-size: 33px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.banner0 #description {
+    border: 2px solid rgba(169, 164, 155, 1);
+    color: rgba(169, 164, 155, 1);
+    margin-top: 60px;
+    padding: 15px 40px;
+    border-radius: 13px;
+}
+
+/* banner1 */
+
+#section-banner1 {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.banner1 {
+    padding-top: 60px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner1 .content {
+    display: flex;
+    flex-direction: row;
+}
+
+/* typo text style */
+.banner1 .content .typo {
+    letter-spacing: 15px;
+    font-size: 43px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-grow: 1;
+    bottom: 0;
+}
+
+/* typo gradient text */
+
+.banner1 .content .typo {
+    background-color: red;
+    background-image: linear-gradient(45deg, red, pink, pink, cyan, lime, yellow);
+    background-size: 300% 300%;
+    background-repeat: repeat;
+    background-clip: unset;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    animation: 3s fading infinite ease-in-out;
+}
+
+@keyframes fading {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+
+}
+
+.banner1 .content video {
+    width: 72%;
+}
+
+.banner1 .link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 8px;
+}
+
+.banner1 .link>a {
+    text-decoration: none;
+    font-size: 21px;
+    color: #006aff;
+    letter-spacing: normal;
+}
+
+
+/* banner2 */
+
+#section-banner2 {
+    background-color: #f5f6f7;
+}
+
+.banner2 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.banner2 .banner2-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgba(0, 0, 0, 1);
+}
+
+.banner2 #product-name {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.banner2 #product-slogan {
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.banner2 .banner2-list {
+    padding-top: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline-start: 0px;
+}
+
+.banner2 .banner2-list img {
+    max-height: 256px;
+    padding-bottom: 15px;
+}
+
+.banner2 .banner2-list li {
+    background-color: rgba(255, 255, 255, 1);
+    border: 2px solid transparent;
+    padding: 15px 5px;
+    border-radius: 23px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all .2s ease-out;
+}
+
+.banner2 .banner2-list li:hover {
+    box-shadow: rgba(101, 222, 255, 1) 0px 5px 15px;
+}
+
+.banner2 .banner2-list li:active {
+    transform: scale(0.90);
+}
+
+.banner2 .banner2-list a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgba(0, 0, 0, 1);
+}
+
+.banner2 .banner2-list .product-name {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.banner2 .banner2-list .product-shortdesc {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.banner2 .banner2-list .product-price {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.banner2 .banner2-list .product-price::before {
+    content: 'Từ ';
+}
+
+.banner2 .banner2-list .product-price::after {
+    content: 'đ';
+}
+
+/* banner3 */
+
+.banner3 {
+    display: grid;
+    grid-template-areas:
+        "n1 n3"
+        "n2 n4";
+        grid-template-columns: 595px;
+        grid-template-rows: 580px;
+    gap: 12px;
+    margin: 100px auto ;
+}
+
+.banner3 img {
+    width: 242px;
+    padding: 20px 0;
+}
+
+#no1 {
+    grid-area: n1;
+    background-color: rgba(250, 250, 250, 1);
+}
+
+
+#no2 {
+    grid-area: n2;
+}
+
+#no3 {
+    grid-area: n3;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+#no4 {
+    grid-area: n4;
+}
+
+.banner3 .product-banner3 {
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0;
+    text-decoration: none;
+    color: #000;
+}
+
+.name-id{
+    font-size: 33px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.price-unknow {
+    font-size: 16px;
+    font-weight: 300;
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 13px;
+    padding: 3px 7px;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: 300;
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 13px;
+    padding: 3px 7px;
+}
+
+.price::after {
+    content: 'đ';
+}
+
+.price::before {
+    content: 'Từ ';
+}
+
+/* typo text style */
+.product-banner3 .typo-2 {
+    letter-spacing: 15px;
+    font-size: 43px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-grow: 1;
+    bottom: 0;
+}
+
+/* typo gradient text */
+
+.product-banner3 .typo-2 {
+    background-color: red;
+    background-image: linear-gradient(90deg, black,black,black, white, white, white);
+    background-size: 300% 300%;
+    background-repeat: repeat;
+    background-clip: unset;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    animation: 6s fading2 infinite ease-in-out;
+}
+
+@keyframes fading2 {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+
+}

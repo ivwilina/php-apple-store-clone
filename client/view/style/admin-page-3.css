@@ -1,0 +1,61 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    user-select: none;
+}
+
+.section-wrapper {
+    width: 100%;
+}
+
+.section-container {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 21px;
+    margin: 25px auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-container {
+
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-title{
+    font-size: 33px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+.bill-list {
+    width: 100%;
+}
+
+.bill-list,th,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px 8px;
+}
+
+.filter {
+    font-size: 23px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.filter > input {
+    font-size: 25px;
+}
+
+.price::after {
+    content: 'đ';
+}

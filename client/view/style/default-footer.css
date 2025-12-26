@@ -1,0 +1,114 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.footer-wrapper {
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-areas: 
+    "social social social"
+    "logo about contact";
+    grid-template-columns: 390px;
+    padding-top: 50px;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.footer-title {
+    font-weight: bold;
+}
+
+.logo {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    grid-area: logo;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 35px !important;
+}
+
+.about {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    grid-area: about;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.about ul {
+    padding-inline-start: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.about ul li::before {
+    content: "> ";
+}
+
+.contact {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    grid-area: contact;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.contact .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-content img {
+    width: 20px;
+}
+
+.social-link {
+    grid-area: social;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+.footer-content .social-link .social-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    box-shadow: 0 1px 2px 0 black;
+}
