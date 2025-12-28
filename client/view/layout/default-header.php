@@ -153,7 +153,7 @@ session_start();
     </div>
     </div>
     </div>
-    <script src="/baitaplon-final/user-interface/function-files/navbar-item-display.js"></script>
+    <script src="/PHP-apple-store-clone/client/script/navbar-item-display.js"></script>
     <?php
     // chuyển đổi trạng thái hiển thị của thẻ thông tin cá nhân tương ứng trạng thái đăng nhập
     if (isset($_SESSION['User'])) {
