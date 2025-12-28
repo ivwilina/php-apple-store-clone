@@ -1,5 +1,5 @@
 <?php
-require_once 'sql-connection.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/connection/sql-connection.php';
 
 //nhận data sản phẩm được chọn
 $ori_string = $_GET['add'];

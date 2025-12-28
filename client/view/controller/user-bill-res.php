@@ -4,7 +4,7 @@
 <body>
     <?php
 
-    require_once 'sql-connection.php';
+    require_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/connection/sql-connection.php';
 
     $name = $_GET['name'];
     $filter = $_GET['filter'];

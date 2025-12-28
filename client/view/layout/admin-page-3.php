@@ -1,5 +1,5 @@
 <?php
-require_once '../client/view/controller/admin-onload3.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/view/controller/admin-onload3.php';
 ?>
 
 <!DOCTYPE html>
@@ -9,8 +9,8 @@ require_once '../client/view/controller/admin-onload3.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple Store</title>
-    <link rel="stylesheet" href="../style/admin-page-3.css">
-    <link rel="shortcut icon" href="../../asset/icon/apple-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/PHP-apple-store-clone/client/view/style/admin-page-3.css">
+    <link rel="shortcut icon" href="/PHP-apple-store-clone/client/asset/icon/apple-favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap"
@@ -20,7 +20,7 @@ require_once '../client/view/controller/admin-onload3.php';
 <body>
     <div class="header-container">
         <?php
-        include_once './client/view/layout/admin-page-header.php';
+        include_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/view/layout/admin-page-header.php';
         if (!isset($_SESSION['Admin'])) {
             header("location:./client/view/layout/sign-in-page.php?");
         }
@@ -82,7 +82,7 @@ require_once '../client/view/controller/admin-onload3.php';
         </div>
     </section>
 
-    <script src="../../script/admin-page-3.js"></script>
+    <script src="/PHP-apple-store-clone/client/script/admin-page-3.js"></script>
 </body>
 
 </html>

@@ -11,8 +11,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple Store</title>
-    <link rel="stylesheet" href="../style/main-page.css">
-    <link rel="shortcut icon" href="../../asset/icon/apple-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/PHP-apple-store-clone/client/view/style/main-page.css">
+    <link rel="shortcut icon" href="/PHP-apple-store-clone/client/asset/icon/apple-favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap"
@@ -24,7 +24,7 @@
     <!-- Header import -->
     <div class="navigation-bar">
         <?php
-        include_once 'default-header.php'
+        include_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/view/layout/default-header.php';
         ?>
     </div>
 
@@ -32,7 +32,7 @@
         <div class="container-fluid">
             <div class="banner0">
                 <span id="product-ads">iPhone 15 Pro</span>
-                <img src="../../asset/products/product-comingsoon/ip15-banner.jpg"
+                <img src="/PHP-apple-store-clone/client/asset/products/product-comingsoon/ip15-banner.jpg"
                     alt="iphone15-titanium-banner">
                 <span id="description">Sắp ra mắt</span>
             </div>
@@ -44,7 +44,7 @@
             <div class="banner1">
                 <div class="content">
                     <video autoplay muted loop>
-                        <source src="../../asset/products/ipads/ipad-air-video.mp4" type="video/mp4">
+                        <source src="/PHP-apple-store-clone/client/asset/products/ipads/ipad-air-video.mp4" type="video/mp4">
                     </video>
                     <div class="typo">
                         <div>iPad Air</div>
@@ -81,7 +81,7 @@
                 <ul class="banner2-list">
                     <li>
                         <a href="./product-specs.php?request=iPhone 14 Pro Max">
-                            <img src="../../asset/products/ip14s/ip14-prm.png" alt="iPhone-14-pro-max">
+                            <img src="/PHP-apple-store-clone/client/asset/products/ip14s/ip14-prm.png" alt="iPhone-14-pro-max">
                             <span class="product-name">
                                 Pro Max
                             </span>
@@ -95,7 +95,7 @@
                     </li>
                     <li>
                         <a href="./product-specs.php?request=iPhone 14 Pro">
-                            <img src="../../asset/products/ip14s/ip14-pr.png" alt="iPhone-14-pro">
+                            <img src="/PHP-apple-store-clone/client/asset/products/ip14s/ip14-pr.png" alt="iPhone-14-pro">
                             <span class="product-name">
                                 Pro
                             </span>
@@ -109,7 +109,7 @@
                     </li>
                     <li>
                         <a href="./product-specs.php?request=iPhone 14 Plus">
-                            <img src="../../asset/products/ip14s/ip14-p.png" alt="iPhone-14-plus">
+                            <img src="/PHP-apple-store-clone/client/asset/products/ip14s/ip14-p.png" alt="iPhone-14-plus">
                             <span class="product-name">
                                 Plus
                             </span>
@@ -123,7 +123,7 @@
                     </li>
                     <li>
                         <a href="./product-specs.php?request=iPhone 14">
-                            <img src="../../asset/products/ip14s/ip14.png" alt="iPhone-14">
+                            <img src="/PHP-apple-store-clone/client/asset/products/ip14s/ip14.png" alt="iPhone-14">
                             <span class="product-name">
                                 14
                             </span>
@@ -150,7 +150,7 @@
                     <span class="price">
                         26890000
                     </span>
-                    <img src="../../asset/products/macbooks/macbook-air-m1.png" alt="macbook-pro-15">
+                    <img src="/PHP-apple-store-clone/client/asset/products/macbooks/macbook-air-m1.png" alt="macbook-pro-15">
                 </a>
                 <div class="product-banner3" id="no2">
                     <span class="name-id">
@@ -159,7 +159,7 @@
                     <span class="price">
                         From $799
                     </span>
-                    <img src="../../asset/products/watchs/watch-ultra.jpg" alt="watch-ultra">
+                    <img src="/PHP-apple-store-clone/client/asset/products/watchs/watch-ultra.jpg" alt="watch-ultra">
                 </div>
                 <div class="product-banner3" id="no3">
                     <div class="typo-2">
@@ -181,7 +181,7 @@
                     <span class="price-unknow">
                         Sắp ra mắt
                     </span>
-                    <img src="../../asset/products/watchs/watch-ultra2.jpg" alt="watch-ultra-2">
+                    <img src="/PHP-apple-store-clone/client/asset/products/watchs/watch-ultra2.jpg" alt="watch-ultra-2">
                 </div>
             </div>
         </div>
@@ -193,14 +193,14 @@
 
         <?php
 
-        include_once 'default-footer.php'
+        include_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/view/layout/default-footer.php';
 
         ?>
 
     </div>
 
 
-    <script src="../../script/main-page.js"></script>
+    <script src="/PHP-apple-store-clone/client/script/main-page.js"></script>
     <script>
         let x = document.querySelectorAll(".product-price, .price");
         for (let i = 0, len = x.length; i < len; i++) {

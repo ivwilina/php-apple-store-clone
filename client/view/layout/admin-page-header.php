@@ -8,8 +8,8 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple Store</title>
-    <link rel="stylesheet" href="../style/admin-page-header.css">
-    <link rel="shortcut icon" href="../../asset/icon/apple-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/PHP-apple-store-clone/client/view/style/admin-page-header.css">
+    <link rel="shortcut icon" href="/PHP-apple-store-clone/client/asset/icon/apple-favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap"
@@ -25,7 +25,7 @@ session_start();
                     <p class="name"><?php echo $_SESSION['Admin'] ?></p>
                 </div>
                 <a href="../controller/logout-process.php" class="logout-button">
-                    <img src="../../asset/icon/logout-icon.png" alt="">
+                    <img src="/PHP-apple-store-clone/client/asset/icon/logout-icon.png" alt="">
                     Đăng xuất
                 </a>
             </div>

@@ -1,6 +1,6 @@
 <?php
 
-require_once 'sql-connection.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/connection/sql-connection.php';
 //select type
 $query_select_account_type = "SELECT * FROM usertype";
 $get_account_type = mysqli_query($connect, $query_select_account_type);

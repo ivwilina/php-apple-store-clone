@@ -1,6 +1,6 @@
 <?php
 
-require_once 'php-files/sql-connection.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/connection/sql-connection.php';
 
 
 ?>
@@ -11,8 +11,8 @@ require_once 'php-files/sql-connection.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple Store</title>
-    <link rel="stylesheet" href="/../style/user-cart.css">
-    <link rel="shortcut icon" href="../../asset/icon/apple-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/PHP-apple-store-clone/client/view/style/user-cart.css">
+    <link rel="shortcut icon" href="/PHP-apple-store-clone/client/asset/icon/apple-favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap"
@@ -23,7 +23,7 @@ require_once 'php-files/sql-connection.php';
     <div class="navigation-bar">
 
         <?php
-        include_once 'default-header.php';
+        include_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/view/layout/default-header.php';
 
         if (!isset($_SESSION['User'])) {
             header("location:./sign-in-page.php?");
@@ -76,7 +76,7 @@ require_once 'php-files/sql-connection.php';
                                         <input type="number" name="quantity" id="" class="quantity" min="1" value="1"
                                             onchange="calPrice()">
                                     </div>
-                                    <img src="../../asset/icon/remove.png" alt=""
+                                    <img src="/PHP-apple-store-clone/client/asset/icon/remove.png" alt=""
                                         onclick="removeCart('<?php echo $item['BagId'] ?>')">
                                 </div>
                             </div>
@@ -118,7 +118,7 @@ require_once 'php-files/sql-connection.php';
 
 
 
-    <script src="../../script/user-cart.js"></script>
+    <script src="/PHP-apple-store-clone/client/script/user-cart.js"></script>
 
 </body>
 

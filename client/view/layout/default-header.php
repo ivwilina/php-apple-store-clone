@@ -11,8 +11,8 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple Store</title>
-    <link rel="stylesheet" href="../style/default-header.css">
-    <link rel="shortcut icon" href="../../asset/icon/apple-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/PHP-apple-store-clone/client/view/style/default-header.css">
+    <link rel="shortcut icon" href="/PHP-apple-store-clone/client/asset/icon/apple-favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap"
@@ -27,7 +27,7 @@ session_start();
                 <li>
                     <!-- <div class="store-logo"> -->
                     <a href="./main-page.php">
-                        <img src="../../asset/icon/apple-icon.png" alt="Main Page">
+                        <img src="/PHP-apple-store-clone/client/asset/icon/apple-icon.png" alt="Main Page">
                         <p>
                             Apple
                             <br>
@@ -63,11 +63,11 @@ session_start();
                 </li>
                 <li onmouseenter="display_search()">
                     <!-- Ẩn hiện thanh tìm kiếm và thẻ thông tin cá nhân bằng JavaScript -->
-                    <img src="../../asset/icon/search-icon.png" alt="Search">
+                        <img src="/PHP-apple-store-clone/client/asset/icon/search-icon.png" alt="Search">
                 </li>
                 <li onmouseenter="display_inventory()">
                     <!-- Ẩn hiện thanh tìm kiếm và thẻ thông tin cá nhân bằng JavaScript -->
-                    <img src="../../asset/icon/user-icon.png" alt="Your Inventory">
+                        <img src="/PHP-apple-store-clone/client/asset/icon/user-icon.png" alt="Your Inventory">
                 </li>
             </ul>
         </div>
@@ -127,25 +127,25 @@ session_start();
         <ul class="user-options">
             <li>
                 <a href="./user-cart.php">
-                    <img src="../../asset/icon/inventory-icon.png" alt="Search">
+                        <img src="/PHP-apple-store-clone/client/asset/icon/inventory-icon.png" alt="Search">
                     <p>Giỏ hàng</p>
                 </a>
             </li>
             <li>
                 <a href="./user-info.php">
-                    <img src="../../asset/icon/option-icon.png" alt="Search">
+                        <img src="/PHP-apple-store-clone/client/asset/icon/option-icon.png" alt="Search">
                     <p>Cài đặt tài khoản</p>
                 </a>
             </li>
             <li>
                 <a href="./user-bill.php">
-                    <img src="../../asset/icon/receipt.png" alt="Search">
+                        <img src="/PHP-apple-store-clone/client/asset/icon/receipt.png" alt="Search">
                     <p>Lịch sử mua hàng</p>
                 </a>
             </li>
             <li>
                 <a href="./php-files/logout-process.php?logout">
-                    <img src="../../asset/icon/logout-icon.png" alt="Search">
+                        <img src="/PHP-apple-store-clone/client/asset/icon/logout-icon.png" alt="Search">
                     <p>Đăng xuất</p>
                 </a>
             </li>

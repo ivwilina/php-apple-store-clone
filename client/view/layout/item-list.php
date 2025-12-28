@@ -1,5 +1,5 @@
 <?php
-require_once './client/connection/sql-connection.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/connection/sql-connection.php';
 ?>
 
 
@@ -10,8 +10,8 @@ require_once './client/connection/sql-connection.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple Store</title>
-    <link rel="stylesheet" href="../style/item-list.css">
-    <link rel="shortcut icon" href="../../asset/icon/apple-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/PHP-apple-store-clone/client/view/style/item-list.css">
+    <link rel="shortcut icon" href="/PHP-apple-store-clone/client/asset/icon/apple-favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap"
@@ -24,7 +24,7 @@ require_once './client/connection/sql-connection.php';
 
         <?php
 
-        include_once 'default-header.php'
+        include_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/view/layout/default-header.php';
 
         ?>
 
@@ -63,7 +63,7 @@ require_once './client/connection/sql-connection.php';
                                 if ($product['ItemType'] == $type['ItemType']) {
                                     $product_json = json_decode($product['Specs']);
                             ?>
-                                    <a href="./product-specs.php?request=<?php echo $product['ItemName'] ?>" class="item">
+                                    <a href="/PHP-apple-store-clone/client/view/layout/product-specs.php?request=<?php echo urlencode($product['ItemName']) ?>" class="item">
                                         <div class="item-inner">
                                             <img src="<?php echo $product_json->imagesource[0]->source ?>" alt="">
                                             <div class="p-name">
@@ -109,7 +109,7 @@ require_once './client/connection/sql-connection.php';
                             foreach ($row_product as $product) {
                                 $product_json = json_decode($product['Specs']);
                             ?>
-                                <a href="./product-specs.php?request=<?php echo $product['ItemName'] ?>" class="item">
+                                <a href="/PHP-apple-store-clone/client/view/layout/product-specs.php?request=<?php echo urlencode($product['ItemName']) ?>" class="item">
                                     <div class="item-inner">
                                         <img src="<?php echo $product_json->imagesource[0]->source ?>" alt="">
                                         <div class="p-name">
@@ -135,7 +135,7 @@ require_once './client/connection/sql-connection.php';
 
     <div class="footer-bar">
         <?php
-        include_once 'default-footer.php'
+        include_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/view/layout/default-footer.php';
         ?>
     </div>
 

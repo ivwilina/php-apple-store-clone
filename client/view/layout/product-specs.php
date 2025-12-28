@@ -1,5 +1,5 @@
 <?php
-require_once './client/connection/sql-connection.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/connection/sql-connection.php';
 
 $product_request = $_GET['request'];
 $sql_query = "SELECT * FROM product WHERE ItemName ='$product_request'";
@@ -16,8 +16,8 @@ $obj = json_decode($r['Specs']);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple Store</title>
-    <link rel="stylesheet" href="../style/product-specs.css">
-    <link rel="shortcut icon" href="../../asset/icon/apple-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/PHP-apple-store-clone/client/view/style/product-specs.css">
+    <link rel="shortcut icon" href="/PHP-apple-store-clone/client/asset/icon/apple-favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap"
@@ -30,7 +30,7 @@ $obj = json_decode($r['Specs']);
 
         <?php
 
-        include_once 'default-header.php'
+        include_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/view/layout/default-header.php';
 
         ?>
 
@@ -51,7 +51,7 @@ $obj = json_decode($r['Specs']);
                         foreach ($obj->imagesource as $imgsrc) {
                         ?>
                             <div class="slider-item">
-                                <img src=<?php echo $imgsrc->source ?> alt="">
+                                <img src="<?php echo $imgsrc->source ?>" alt="">
                             </div>
                         <?php
                         }
@@ -59,12 +59,12 @@ $obj = json_decode($r['Specs']);
                     </div>
                     <div class="next-button" onclick="imageSliderNext()">
                         <div class="icon">
-                            <img src="../../asset/icon/next.png" alt="">
+                            <img src="/PHP-apple-store-clone/client/asset/icon/next.png" alt="">
                         </div>
                     </div>
                     <div class="prev-button" onclick="imageSliderPrev()">
                         <div class="icon">
-                            <img src="../../asset/icon/back.png" alt="">
+                            <img src="/PHP-apple-store-clone/client/asset/icon/back.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -141,7 +141,7 @@ $obj = json_decode($r['Specs']);
                 <?php
                 } else {
                 ?>
-                    <div class="add-to-bag-button" onclick="location.href='./sign-in-page.php'">
+                    <div class="add-to-bag-button" onclick="location.href='/PHP-apple-store-clone/client/view/layout/sign-in-page.php'">
                         Đăng nhập để thêm vào giỏ hàng
                     </div>
                 <?php
@@ -150,7 +150,7 @@ $obj = json_decode($r['Specs']);
             </div>
         </div>
     </section>
-    <script src="../../script/product-specs.js"></script>
+    <script src="/PHP-apple-store-clone/client/script/product-specs.js"></script>
     <script>
         let x = document.querySelectorAll(".storage-price");
         for (let i = 0, len = x.length; i < len; i++) {
@@ -164,7 +164,7 @@ $obj = json_decode($r['Specs']);
 
         <?php
 
-        include_once 'default-footer.php'
+        include_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/view/layout/default-footer.php';
 
         ?>
 

@@ -1,6 +1,6 @@
 <?php
 
-require_once 'sql-connection.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/connection/sql-connection.php';
 
 $removeItemId = $_GET['id'];
 
