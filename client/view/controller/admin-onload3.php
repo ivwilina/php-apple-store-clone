@@ -1,4 +1,8 @@
 <?php
+// =============================
+// Chức năng: Hiển thị dữ liệu hóa đơn cho admin khi tải trang
+// Lấy danh sách tất cả hóa đơn
+// =============================
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/connection/sql-connection.php';
 

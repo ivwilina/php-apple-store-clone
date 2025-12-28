@@ -3,6 +3,10 @@
 
 <body>
     <?php
+// =============================
+// Chức năng: Cập nhật thông tin sản phẩm trong database
+// Nhận thông tin mới từ biến GET, xử lý và cập nhật vào bảng product
+// =============================
 
     require_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/connection/sql-connection.php';
 

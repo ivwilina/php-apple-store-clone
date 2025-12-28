@@ -1,4 +1,9 @@
 <?php
+// =============================
+// Chức năng: Thêm sản phẩm vào giỏ hàng
+// Nhận thông tin sản phẩm từ biến GET, lấy ảnh màu phù hợp và lưu vào bảng bag
+// =============================
+
 require_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/connection/sql-connection.php';
 
 //nhận data sản phẩm được chọn

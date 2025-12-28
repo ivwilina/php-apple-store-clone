@@ -1,4 +1,8 @@
 <?php
+// =============================
+// Chức năng: Hiển thị giỏ hàng của người dùng
+// Kiểm tra đăng nhập, lấy dữ liệu giỏ hàng từ database và hiển thị
+// =============================
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/connection/sql-connection.php';
 

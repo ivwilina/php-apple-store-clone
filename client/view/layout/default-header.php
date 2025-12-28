@@ -1,4 +1,9 @@
 <?php
+// =============================
+// Chức năng: Hiển thị header mặc định cho các trang
+// Chứa logo, menu, và các liên kết chính của website
+// =============================
+
 // session để check trạng thái đăng nhập, khai báo sesseion ở file login-process
 session_start();
 ?>

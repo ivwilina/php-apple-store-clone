@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,6 +21,10 @@
             header("location:/PHP-apple-store-clone/client/view/layout/sign-in-page.php");
         }
         
+        // =============================
+        // Chức năng: Hiển thị hóa đơn của người dùng
+        // Kiểm tra đăng nhập, lấy dữ liệu hóa đơn từ database và hiển thị
+        // =============================
         require_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/connection/sql-connection.php';
 
         $usr = $_SESSION['User'];

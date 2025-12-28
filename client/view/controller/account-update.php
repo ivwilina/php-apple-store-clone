@@ -3,6 +3,10 @@
 
 <body>
     <?php
+// =============================
+// Chức năng: Cập nhật thông tin tài khoản
+// Nhận dữ liệu cập nhật từ biến GET, xử lý và cập nhật vào bảng user
+// =============================
 
     require_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/connection/sql-connection.php';
 

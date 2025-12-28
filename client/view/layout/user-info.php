@@ -22,6 +22,11 @@
         }
 
 
+        // =============================
+        // Chức năng: Hiển thị thông tin cá nhân của người dùng
+        // Kiểm tra đăng nhập, lấy dữ liệu người dùng từ database và hiển thị
+        // =============================
+
         require_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/connection/sql-connection.php';
         $usr = $_SESSION['User'];
         $query_user = "SELECT * FROM user WHERE Username = '$usr'";

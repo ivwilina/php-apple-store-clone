@@ -1,4 +1,9 @@
 <?php
+// =============================
+// Chức năng: Hiển thị thông số chi tiết sản phẩm
+// Lấy dữ liệu sản phẩm từ database và hiển thị thông số, hình ảnh, màu sắc
+// =============================
+
 require_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/connection/sql-connection.php';
 
 $product_request = $_GET['request'];

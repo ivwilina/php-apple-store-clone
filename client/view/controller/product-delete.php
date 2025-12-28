@@ -3,6 +3,10 @@
 
 <body>
     <?php
+// =============================
+// Chức năng: Xóa sản phẩm khỏi database
+// Nhận tên sản phẩm cần xóa từ biến GET và thực hiện truy vấn xóa
+// =============================
 
     require_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/connection/sql-connection.php';
 

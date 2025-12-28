@@ -1,4 +1,9 @@
 <?php
+// =============================
+// Chức năng: Xử lý đăng nhập và đăng ký tài khoản
+// Nếu đăng nhập thành công sẽ chuyển hướng tới trang phù hợp
+// Nếu đăng ký sẽ thêm tài khoản mới vào database
+// =============================
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/connection/sql-connection.php';
 

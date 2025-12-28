@@ -1,3 +1,10 @@
+<?php
+// =============================
+// Chức năng: Hiển thị footer mặc định cho các trang
+// Chứa thông tin bản quyền, liên hệ, và các liên kết phụ
+// =============================
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

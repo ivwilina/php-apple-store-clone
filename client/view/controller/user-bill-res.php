@@ -3,6 +3,10 @@
 
 <body>
     <?php
+// =============================
+// Chức năng: Hiển thị thông tin hóa đơn của người dùng
+// Lọc và hiển thị các hóa đơn theo tên người dùng hoặc theo bộ lọc
+// =============================
 
     require_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/connection/sql-connection.php';
 

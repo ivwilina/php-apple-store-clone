@@ -1,7 +1,6 @@
+
 <?php
-
-// check login
-
+// Kiểm tra đăng nhập (nếu cần, thêm logic ở đây)
 ?>
 
 <!DOCTYPE html>
@@ -9,6 +8,12 @@
 
 <head>
     <meta charset="UTF-8">
+    <!--
+        Đây là phần đầu trang, khai báo các meta, tiêu đề, liên kết CSS và font.
+        - Sử dụng Poppins cho font chữ.
+        - Liên kết tới file CSS chính của trang.
+        - Đặt favicon của Apple Store.
+    -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple Store</title>
     <link rel="stylesheet" href="/PHP-apple-store-clone/client/view/style/main-page.css">
@@ -21,7 +26,10 @@
 
 <body>
 
-    <!-- Header import -->
+    <!--
+        Phần header: import thanh điều hướng từ file default-header.php
+        Sử dụng include_once để tránh import nhiều lần.
+    -->
     <div class="navigation-bar">
         <?php
         include_once 'default-header.php';
@@ -29,6 +37,10 @@
     </div>
 
     <section id="section-banner0">
+        <!--
+            Banner quảng cáo sản phẩm mới (iPhone 15 Pro)
+            Hiển thị hình ảnh và thông tin sản phẩm sắp ra mắt.
+        -->
         <div class="container-fluid">
             <div class="banner0">
                 <span id="product-ads">iPhone 15 Pro</span>
@@ -40,6 +52,10 @@
     </section>
 
     <section id="section-banner1">
+        <!--
+            Banner quảng cáo iPad Air với video nền.
+            Có nút "Tìm hiểu thêm" dẫn tới trang thông số sản phẩm.
+        -->
         <div class="container-fluid">
             <div class="banner1">
                 <div class="content">
@@ -68,6 +84,11 @@
     </section>
 
     <section id="section-banner2">
+        <!--
+            Banner quảng cáo các dòng iPhone 14.
+            Hiển thị danh sách sản phẩm với hình ảnh, tên, mô tả ngắn và giá.
+            Mỗi sản phẩm là một thẻ <li> có link tới trang chi tiết.
+        -->
         <div class="container-fluid">
             <div class="banner2">
                 <div class="banner2-header">
@@ -141,6 +162,10 @@
     </section>
 
     <section id="section-banner3">
+        <!--
+            Banner quảng cáo Macbook và Apple Watch.
+            Hiển thị nhiều sản phẩm với hình ảnh, tên và giá.
+        -->
         <div class="container-fluid">
             <div class="banner3">
                 <a class="product-banner3" id="no1" href="/PHP-apple-store-clone/client/view/layout/product-specs.php?request=Macbook Air M2">
@@ -191,10 +216,11 @@
     <!-- Footer import -->
     <div class="footer-bar">
 
+        <!--
+            Phần footer: import từ file default-footer.php
+        -->
         <?php
-
         include_once 'default-footer.php';
-
         ?>
 
     </div>
@@ -202,6 +228,7 @@
 
     <script src="/PHP-apple-store-clone/client/script/main-page.js"></script>
     <script>
+        // Định dạng lại giá sản phẩm thành dạng có dấu phẩy (VD: 21,490,000)
         let x = document.querySelectorAll(".product-price, .price");
         for (let i = 0, len = x.length; i < len; i++) {
             let num = Number(x[i].innerHTML)

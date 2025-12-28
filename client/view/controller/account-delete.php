@@ -3,6 +3,10 @@
 
 <body>
     <?php
+// =============================
+// Chức năng: Xóa tài khoản khỏi hệ thống
+// Nhận tên tài khoản cần xóa từ biến GET và thực hiện truy vấn xóa
+// =============================
 
     require_once 'sql-connection.php';
 

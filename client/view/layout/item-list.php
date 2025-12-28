@@ -1,4 +1,9 @@
 <?php
+// =============================
+// Chức năng: Hiển thị danh sách sản phẩm
+// Lấy dữ liệu sản phẩm từ database và hiển thị theo loại hoặc tìm kiếm
+// =============================
+
 require_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/connection/sql-connection.php';
 ?>
 

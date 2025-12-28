@@ -1,7 +1,12 @@
 <?php
+// =============================
+// Chức năng: Cập nhật thông tin tài khoản người dùng
+// Nhận dữ liệu từ form POST, thực hiện truy vấn cập nhật vào bảng user
+// Sau khi cập nhật sẽ chuyển về trang đăng nhập
+// =============================
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/connection/sql-connection.php';
-session_start();
+session_start(); // Bắt đầu session để lấy thông tin người dùng
 if (isset($_POST['update'])) {
     $username = $_POST['username'];
     $password = $_POST['pass'];
@@ -14,6 +19,6 @@ if (isset($_POST['update'])) {
 
     mysqli_query($connect, $query_update);
 
-    session_destroy();
-    header("location:/PHP-apple-store-clone/client/view/layout/sign-in-page.php");
+    session_destroy(); // Hủy session sau khi cập nhật
+    header("location:/PHP-apple-store-clone/client/view/layout/sign-in-page.php"); // Chuyển về trang đăng nhập
 }

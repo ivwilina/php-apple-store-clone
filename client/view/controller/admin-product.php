@@ -3,6 +3,10 @@
 
 <body>
     <?php
+// =============================
+// Chức năng: Quản lý sản phẩm cho admin
+// Hiển thị danh sách sản phẩm theo loại, cho phép chỉnh sửa và xóa
+// =============================
 
     require_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/connection/sql-connection.php';
 

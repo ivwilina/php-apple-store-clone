@@ -1,4 +1,8 @@
 <?php
+// =============================
+// Chức năng: Xử lý thanh toán đơn hàng
+// Nhận thông tin đơn hàng từ biến GET, xử lý và lưu vào bảng bill
+// =============================
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/connection/sql-connection.php';
 

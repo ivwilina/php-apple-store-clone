@@ -3,6 +3,10 @@
 
 <body>
     <?php
+// =============================
+// Chức năng: Thêm tài khoản mới vào hệ thống
+// Nhận thông tin tài khoản từ biến GET, xử lý và lưu vào bảng user
+// =============================
 
     require_once 'sql-connection.php';
 

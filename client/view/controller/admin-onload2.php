@@ -1,4 +1,8 @@
 <?php
+// =============================
+// Chức năng: Hiển thị dữ liệu tài khoản cho admin khi tải trang
+// Lấy danh sách loại tài khoản và tất cả tài khoản
+// =============================
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/connection/sql-connection.php';
 //select type

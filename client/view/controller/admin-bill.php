@@ -3,6 +3,10 @@
 
 <body>
     <?php
+// =============================
+// Chức năng: Quản lý hóa đơn cho admin
+// Hiển thị danh sách hóa đơn theo bộ lọc
+// =============================
 
     require_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/connection/sql-connection.php';
 

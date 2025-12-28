@@ -3,6 +3,10 @@
 
 <body>
     <?php
+// =============================
+// Chức năng: Quản lý tài khoản admin
+// Hiển thị danh sách tài khoản theo loại, cho phép chỉnh sửa và xóa
+// =============================
 
     require_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/connection/sql-connection.php';
 

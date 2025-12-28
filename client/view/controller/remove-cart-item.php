@@ -1,4 +1,9 @@
 <?php
+// =============================
+// Chức năng: Xóa sản phẩm khỏi giỏ hàng
+// Nhận id sản phẩm từ biến GET và thực hiện truy vấn xóa
+// Sau đó chuyển về trang giỏ hàng
+// =============================
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/connection/sql-connection.php';
 
