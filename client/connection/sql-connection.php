@@ -1,5 +1,5 @@
 <?php
-require_once("../config/serverConfig.php");
+require_once(__DIR__ . '/../config/serverConfig.php');
 
 
 $connect = mysqli_connect($hostname, $username, $password, $database);
