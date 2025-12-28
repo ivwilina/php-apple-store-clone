@@ -15,5 +15,5 @@ if (isset($_POST['update'])) {
     mysqli_query($connect, $query_update);
 
     session_destroy();
-    header("location:../layout/sign-in-page.php?");
+    header("location:/PHP-apple-store-clone/client/view/layout/sign-in-page.php");
 }

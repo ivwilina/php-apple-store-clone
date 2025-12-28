@@ -22,7 +22,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/view/con
         <?php
         include_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/view/layout/admin-page-header.php';
         if (!isset($_SESSION['Admin'])) {
-            header("location:./client/view/layout/sign-in-page.php?");
+            header("location:/PHP-apple-store-clone/client/view/layout/sign-in-page.php");
         }
         ?>
     </div>

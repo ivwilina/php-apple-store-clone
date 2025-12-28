@@ -26,7 +26,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/connecti
         include_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/view/layout/default-header.php';
 
         if (!isset($_SESSION['User'])) {
-            header("location:./sign-in-page.php?");
+            header("location:/PHP-apple-store-clone/client/view/layout/sign-in-page.php");
         }
         ?>
 

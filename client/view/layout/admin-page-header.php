@@ -24,19 +24,19 @@ session_start();
                     <p>Xin chào</p>
                     <p class="name"><?php echo $_SESSION['Admin'] ?></p>
                 </div>
-                <a href="../controller/logout-process.php" class="logout-button">
+                <a href="/PHP-apple-store-clone/client/view/controller/logout-process.php" class="logout-button">
                     <img src="/PHP-apple-store-clone/client/asset/icon/logout-icon.png" alt="">
                     Đăng xuất
                 </a>
             </div>
             <div class="subpage">
-                <a href="./admin-page-1.php" class="direct-subpage">
+                <a href="/PHP-apple-store-clone/client/view/layout/admin-page-1.php" class="direct-subpage">
                     Sản phẩm
                 </a>
-                <a href="./admin-page-3.php" class="direct-subpage">
+                <a href="/PHP-apple-store-clone/client/view/layout/admin-page-3.php" class="direct-subpage">
                     Đơn hàng
                 </a>
-                <a href="./admin-page-2.php" class="direct-subpage">
+                <a href="/PHP-apple-store-clone/client/view/layout/admin-page-2.php" class="direct-subpage">
                     Tài khoản
                 </a>
             </div>

@@ -26,7 +26,7 @@ session_start();
             <ul class="nav">
                 <li>
                     <!-- <div class="store-logo"> -->
-                    <a href="./main-page.php">
+                    <a href="/PHP-apple-store-clone/client/view/layout/main-page.php">
                         <img src="/PHP-apple-store-clone/client/asset/icon/apple-icon.png" alt="Main Page">
                         <p>
                             Apple
@@ -37,27 +37,27 @@ session_start();
                     <!-- </div> -->
                 </li>
                 <li>
-                    <a href="./item-list.php?searchItem=all">
+                    <a href="/PHP-apple-store-clone/client/view/layout/item-list.php?searchItem=all">
                         Sản phẩm
                     </a>
                 </li>
                 <li>
-                    <a href="./item-list.php?searchItem=Macbook">
+                    <a href="/PHP-apple-store-clone/client/view/layout/item-list.php?searchItem=Macbook">
                         Macbook
                     </a>
                 </li>
                 <li>
-                    <a href="./item-list.php?searchItem=iPhone">
+                    <a href="/PHP-apple-store-clone/client/view/layout/item-list.php?searchItem=iPhone">
                         iPhone
                     </a>
                 </li>
                 <li>
-                    <a href="./item-list.php?searchItem=iPad">
+                    <a href="/PHP-apple-store-clone/client/view/layout/item-list.php?searchItem=iPad">
                         iPad
                     </a>
                 </li>
                 <li>
-                    <a href="./item-list.php?searchItem=Watch">
+                    <a href="/PHP-apple-store-clone/client/view/layout/item-list.php?searchItem=Watch">
                         Watch
                     </a>
                 </li>
@@ -77,7 +77,7 @@ session_start();
     <!-- Search dropdown -->
     <div class="search-wrapper" id="search-dropdown" onmouseleave="display_search()">
         <div class="search-container">
-            <form action="./item-list.php?searchItem" method="get">
+            <form action="/PHP-apple-store-clone/client/view/layout/item-list.php?searchItem" method="get">
                 <div class="search-bar" id="">
                     <img src="../../asset/icon/search-icon.png" alt="Search">
                     <input type="text" placeholder="Nhập từ khoá" name="searchItem">
@@ -86,22 +86,22 @@ session_start();
             <span>Tìm kiếm nhanh</span>
             <ul class="quick-link">
                 <li>
-                    <a href="./item-list.php?searchItem=iPhone">
+                    <a href="/PHP-apple-store-clone/client/view/layout/item-list.php?searchItem=iPhone">
                         ➝ iPhone
                     </a>
                 </li>
                 <li>
-                    <a href="./item-list.php?searchItem=iPad">
+                    <a href="/PHP-apple-store-clone/client/view/layout/item-list.php?searchItem=iPad">
                         ➝ iPad
                     </a>
                 </li>
                 <li>
-                    <a href="./item-list.php?searchItem=Watch">
+                    <a href="/PHP-apple-store-clone/client/view/layout/item-list.php?searchItem=Watch">
                         ➝ Watch
                     </a>
                 </li>
                 <li>
-                    <a href="./item-list.php?searchItem=Macbook">
+                    <a href="/PHP-apple-store-clone/client/view/layout/item-list.php?searchItem=Macbook">
                         ➝ Macbook
                     </a>
                 </li>
@@ -113,7 +113,7 @@ session_start();
     <!-- Inventory sidebar (non-logged) -->
     <div class="inventory-wrapper" id="inventory-sidebar" onmouseleave="display_inventory()">
         <div class="inventory-container" id="inventory1">
-            <div class="inventory-title01"><a href="./sign-in-page.php">Đăng nhập</a> để xem thông tin cá nhân.</div>
+            <div class="inventory-title01"><a href="/PHP-apple-store-clone/client/view/layout/sign-in-page.php">Đăng nhập</a> để xem thông tin cá nhân.</div>
         </div>
         <div class="inventory-container-logged" id="inventory2">
             <div class="user-info">
@@ -126,25 +126,25 @@ session_start();
         </div>
         <ul class="user-options">
             <li>
-                <a href="./user-cart.php">
+                <a href="/PHP-apple-store-clone/client/view/layout/user-cart.php">
                         <img src="/PHP-apple-store-clone/client/asset/icon/inventory-icon.png" alt="Search">
                     <p>Giỏ hàng</p>
                 </a>
             </li>
             <li>
-                <a href="./user-info.php">
+                <a href="/PHP-apple-store-clone/client/view/layout/user-info.php">
                         <img src="/PHP-apple-store-clone/client/asset/icon/option-icon.png" alt="Search">
                     <p>Cài đặt tài khoản</p>
                 </a>
             </li>
             <li>
-                <a href="./user-bill.php">
+                <a href="/PHP-apple-store-clone/client/view/layout/user-bill.php">
                         <img src="/PHP-apple-store-clone/client/asset/icon/receipt.png" alt="Search">
                     <p>Lịch sử mua hàng</p>
                 </a>
             </li>
             <li>
-                <a href="./php-files/logout-process.php?logout">
+                <a href="/PHP-apple-store-clone/client/view/controller/logout-process.php?logout">
                         <img src="/PHP-apple-store-clone/client/asset/icon/logout-icon.png" alt="Search">
                     <p>Đăng xuất</p>
                 </a>

@@ -24,7 +24,7 @@
     <!-- Header import -->
     <div class="navigation-bar">
         <?php
-        include_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/view/layout/default-header.php';
+        include_once 'default-header.php';
         ?>
     </div>
 
@@ -59,7 +59,7 @@
                 </div>
                 <div class="link">
                     <span>Feel the Air</span>
-                    <a href="./product-specs.php?request=iPad Air">
+                    <a href="/PHP-apple-store-clone/client/view/layout/product-specs.php?request=iPad Air">
                         Tìm hiểu thêm >
                     </a>
                 </div>
@@ -80,7 +80,7 @@
                 </div>
                 <ul class="banner2-list">
                     <li>
-                        <a href="./product-specs.php?request=iPhone 14 Pro Max">
+                        <a href="/PHP-apple-store-clone/client/view/layout/product-specs.php?request=iPhone 14 Pro Max">
                             <img src="/PHP-apple-store-clone/client/asset/products/ip14s/ip14-prm.png" alt="iPhone-14-pro-max">
                             <span class="product-name">
                                 Pro Max
@@ -94,7 +94,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="./product-specs.php?request=iPhone 14 Pro">
+                        <a href="/PHP-apple-store-clone/client/view/layout/product-specs.php?request=iPhone 14 Pro">
                             <img src="/PHP-apple-store-clone/client/asset/products/ip14s/ip14-pr.png" alt="iPhone-14-pro">
                             <span class="product-name">
                                 Pro
@@ -108,7 +108,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="./product-specs.php?request=iPhone 14 Plus">
+                        <a href="/PHP-apple-store-clone/client/view/layout/product-specs.php?request=iPhone 14 Plus">
                             <img src="/PHP-apple-store-clone/client/asset/products/ip14s/ip14-p.png" alt="iPhone-14-plus">
                             <span class="product-name">
                                 Plus
@@ -122,7 +122,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="./product-specs.php?request=iPhone 14">
+                        <a href="/PHP-apple-store-clone/client/view/layout/product-specs.php?request=iPhone 14">
                             <img src="/PHP-apple-store-clone/client/asset/products/ip14s/ip14.png" alt="iPhone-14">
                             <span class="product-name">
                                 14
@@ -143,7 +143,7 @@
     <section id="section-banner3">
         <div class="container-fluid">
             <div class="banner3">
-                <a class="product-banner3" id="no1" href="./product-specs.php?request=Macbook Air M2">
+                <a class="product-banner3" id="no1" href="/PHP-apple-store-clone/client/view/layout/product-specs.php?request=Macbook Air M2">
                     <span class="name-id">
                         Macbook Air M2
                     </span>
@@ -193,7 +193,7 @@
 
         <?php
 
-        include_once $_SERVER['DOCUMENT_ROOT'] . '/PHP-apple-store-clone/client/view/layout/default-footer.php';
+        include_once 'default-footer.php';
 
         ?>
 

@@ -8,4 +8,4 @@ $query = "DELETE FROM bag WHERE BagId='$removeItemId'";
 
 mysqli_query($connect, $query);
 
-header('location:../layout/user-cart.php?');
+header('location:/PHP-apple-store-clone/client/view/layout/user-cart.php');

@@ -12,14 +12,14 @@ if (isset($_POST['signin'])) {
     if ($data) {
         if ($data['Type'] == "user") {
             $_SESSION['User'] = $data['Username'];
-            header("location:../layout/main-page.php?");
+            header("location:/PHP-apple-store-clone/client/view/layout/main-page.php");
         }
         if ($data['Type'] == "admin") {
             $_SESSION['Admin'] = $data['Name'];
-            header("location:../layout/admin-page-1.php?");
+            header("location:/PHP-apple-store-clone/client/view/layout/admin-page-1.php");
         }
     } else {
-        header("location:../layout/sign-in-page.php?Invalid=wrongpass");
+        header("location:/PHP-apple-store-clone/client/view/layout/sign-in-page.php?Invalid=wrongpass");
     }
 }
 if (isset($_POST['signup'])) {
@@ -32,7 +32,7 @@ if (isset($_POST['signup'])) {
     $type = "user";
     $query_signup = "INSERT INTO user VALUES ('$username','$password','$type','$name','$tel','$mail','$address')";
     mysqli_query($connect, $query_signup);
-    header("location:../layout/sign-in-page.php?");
+    header("location:/PHP-apple-store-clone/client/view/layout/sign-in-page.php");
 } else {
     echo "not working";
 }

@@ -141,7 +141,7 @@ $obj = json_decode($r['Specs']);
                 <?php
                 } else {
                 ?>
-                    <div class="add-to-bag-button" onclick="location.href='/PHP-apple-store-clone/client/view/layout/sign-in-page.php'">
+                    <div class="add-to-bag-button" onclick="location.href='sign-in-page.php'">
                         Đăng nhập để thêm vào giỏ hàng
                     </div>
                 <?php
